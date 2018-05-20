@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content='width=device-width, initial-scale=1.0'>
+	<meta http-equiv="X-UA-Compatible" content='ie=edge'>
+	<title>Blogger</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm p-3 navbar-dark bg-dark">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">
+				<h3>Blogger</h3>
+			</a>
+			<button data-toggle='collapse' data-target='#navigation' class="navbar-toggler">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id='navigation'>
+				<div class="navbar-nav">
+					<div class="dropdown">
+						<a href="#" class="dropdown-toggle nav-link" data-toggle='dropdown'>
+							<i class="fa fa-user"></i>Welcome James</a>
+						<div class="dropdown-menu">
+							<a href="profile.html" class="dropdown-item"><i class="fa fa-user-circle"></i>Profile</a>
+							<a href="login.html" class="dropdown-item"><i class="fa fa-user-times"></i>Log Out</a>
+							<a href="setting.html" class="dropdown-item"><i class="fa fa-gear"></i>Settings</a>
+						</div>
+					</div>
+				</div>
+
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Dashboard</a>
+					</li>
+          <li class="nav-item">
+						<a href="posts.html" class="nav-link">Posts</a>
+					</li>
+					<li class="nav-item active">
+						<a href="categories.html" class="nav-link">Categories</a>
+					</li>
+					<li class="nav-item">
+						<a href="users.html" class="nav-link">Users</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Head Section -->
+	<header id='main-header' class="bg-warning text-white py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2><i class="fa fa-gear"></i>Categories</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Actions -->
+	<section id="actions" class="p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 ml-auto">
+          <div class="input-group">
+            <input type="text" placeholder="Search" class="form-control">
+            <span class="input-group-btn">
+              <button class="btn btn-warning">Search</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+	</section>
+
+	<!-- Posts -->
+	<section id='posts'>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="card">
+						<div class="card-header">
+							<h2>Latest Categories</h2>
+						</div>
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Category</th>
+									<th>Date Posted</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td scope='row'>1</td>
+									<td>Tech Stocks</td>
+									<td>March 15, 2018</td>
+									<td>
+										<a href="details.html" class="btn btn-outline-secondary">
+											<i class="fa fa-angle-double-right"></i>Details
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td scope='row'>1</td>
+									<td>Web Development</td>
+									<td>January 11, 2017</td>
+									<td>
+										<a href="details.html" class="btn btn-outline-secondary">
+											<i class="fa fa-angle-double-right"></i>Details
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td scope='row'>1</td>
+									<td>Business and Finance</td>
+									<td>December 20, 2016</td>
+									<td>
+										<a href="details.html" class="btn btn-outline-secondary">
+											<i class="fa fa-angle-double-right"></i>Details
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+            <nav class="ml-auto">
+              <ul class="pagination">
+                <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+              </ul>
+            </nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer Section -->
+	<section id="main-footer" class="bg-dark text-white p-5">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p class="text-center lead">Copyright &copy; 2018 Blogger</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
