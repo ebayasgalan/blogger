@@ -41,7 +41,7 @@
 					<li class="nav-item">
 						<a href="categories.html" class="nav-link">Categories</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a href="users.html" class="nav-link">Users</a>
 					</li>
 				</ul>
@@ -54,7 +54,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2><i class="fa fa-gear"></i>Profile</h2>
+					<h2><i class="fa fa-gear"></i>Settings</h2>
 				</div>
 			</div>
 		</div>
@@ -68,45 +68,55 @@
 					<a href="index.html" class="btn btn-light btn-block"><i class="fa fa-arrow-left"></i>Back To Dashboard</a>
 				</div>
 				<div class="col-md-3">
-					<a href="#" class="btn btn-block btn-success"><i class="fa fa-lock"></i>Change Password</a>
-				</div>
-				<div class="col-md-3">
-					<a href="#" class="btn btn-block btn-danger"><i class="fa fa-times"></i>Delete Account</a>
+					<a href="#" class="btn btn-block btn-primary"><i class="fa fa-times"></i>Save</a>
 				</div>
       </div>
     </div>
 	</section>
 
-	<!-- Edit Profile Section -->
+	<!-- Settings Section -->
 	<section id='posts'>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-9">
-        	<div class="card">
-        		<div class="card-header">Edit Profile</div>
-						<div class="card-body">
-							<form>
-								<div class="form-group">
-									<label for="name">Name</label>
-									<input type="text" class="form-control">
-								</div>
-								<div class="form-group">
-									<label for="email">Email</label>
-									<input type="text" class="form-control">
-								</div>
-								<div class="form-group">
-									<label for="title">Bio</label>
-									<textarea name="editor1" class="form-control"></textarea>
-								</div>
-							</form>
-							<button href="#" class="btn btn-primary btn-block">Save</button>
-						</div>
-        	</div>
+				<div class="col">
+          <div class="card">
+            <div class="card-header">
+              <h3>Edit Settings</h3>
+            </div>
+            <div class="card-body">
+              <fieldset>
+                <legend>
+                  Allow User Registration
+                </legend>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input"  value="yes" checked>Yes
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input"  value="no">No
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  Page Format
+                </legend>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input"  value="singlePage" checked>Single Page
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input"  value="postIndex">Index only
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
         </div>
-				<div class="col-md-3">
-					<img src="img/person2.jpg" alt="" class='img-fluid'>
-					<button class="btn btn-block btn-primary">Change image</button>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -125,9 +135,5 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
-	<script>
-			CKEDITOR.replace( 'editor1' );
-	</script>
 </body>
 </html>
